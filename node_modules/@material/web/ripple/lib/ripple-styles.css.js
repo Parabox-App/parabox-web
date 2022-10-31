@@ -1,0 +1,9 @@
+/**
+  * @license
+  * Copyright 2022 Google LLC
+  * SPDX-License-Identifier: Apache-2.0
+  */
+import { css } from 'lit';
+export const styles = css `:host{position:absolute;inset:0;pointer-events:none;overflow:hidden;display:flex}:host([disabled]){opacity:0}.md3-ripple-surface{position:absolute;inset:0;pointer-events:none;overflow:hidden;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.md3-ripple-surface::before,.md3-ripple-surface::after{position:absolute;opacity:0;pointer-events:none;z-index:-1;content:""}.md3-ripple-surface::before{transition:opacity 15ms linear,background-color 15ms linear;inset:0}.md3-ripple-surface::after{transition:opacity 375ms linear;transform-origin:center center}.md3-ripple--focused::before{transition-duration:75ms}.md3-ripple--pressed::after{transition-duration:105ms}.md3-ripple-surface{border-radius:var(--md-ripple-state-layer-shape, 0)}.md3-ripple-surface::before{background-color:var(--md-ripple-hover-state-layer-color, black)}.md3-ripple-surface::after{background:radial-gradient(closest-side, var(--md-ripple-pressed-state-layer-color, black) max(100% - 70px, 65%), transparent 100%)}.md3-ripple-surface.md3-ripple--hovered::before{opacity:var(--md-ripple-hover-state-layer-opacity, 0.08);background-color:var(--md-ripple-hover-state-layer-color, black)}.md3-ripple-surface.md3-ripple--focused::before{opacity:var(--md-ripple-focus-state-layer-opacity, 0.12);background-color:var(--md-ripple-focus-state-layer-color, black)}.md3-ripple-surface.md3-ripple--pressed::after{opacity:var(--md-ripple-pressed-state-layer-opacity, 0.12)}.md3-ripple-surface.md3-ripple--unbounded{border-radius:var(--md-ripple-state-layer-shape, 9999px)}/*# sourceMappingURL=ripple-styles.css.map */
+`;
+//# sourceMappingURL=ripple-styles.css.js.map

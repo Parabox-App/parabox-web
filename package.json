@@ -1,0 +1,36 @@
+{
+  "name": "parabox-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parabox-App/parabox-web.git"
+  },
+  "keywords": [
+    "parabox"
+  ],
+  "author": "Ojhdt",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Parabox-App/parabox-web/issues"
+  },
+  "homepage": "https://github.com/Parabox-App/parabox-web#readme",
+  "dependencies": {
+    "@lit/reactive-element": "^1.0.0",
+    "@material/web": "^0.1.0-alpha.0",
+    "lit": "^2.0.0",
+    "lit-element": "^3.0.0",
+    "lit-html": "^2.0.0",
+    "tslib": "^2.4.0"
+  },
+  "nodemonConfig": {
+    "ext": "js,html"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.35"
+  }
+}

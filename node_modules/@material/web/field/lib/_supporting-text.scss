@@ -1,0 +1,20 @@
+//
+// Copyright 2022 Google LLC
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// stylelint-disable selector-class-pattern --
+// Selector '.md3-*' should only be used in this project.
+
+@mixin static-styles() {
+  .md3-field__supporting-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .md3-field__supporting-text-start,
+  .md3-field__supporting-text-end {
+    // Can't be an inline display element (<span>) for padding-top to work.
+    display: flex;
+  }
+}
