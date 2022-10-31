@@ -1,0 +1,133 @@
+//
+// Copyright 2022 Google LLC
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// stylelint-disable selector-class-pattern --
+// Selector '.md3-*' should only be used in this project.
+
+@use '@material/web/focus/lib/focus-ring-theme';
+
+@mixin static-styles() {
+  :host {
+    @include host-root;
+    @include focus-ring-theme.theme(
+      (
+        container-outer-padding-vertical: -2px,
+        container-outer-padding-horizontal: -4px,
+      )
+    );
+  }
+
+  .md3-list-item {
+    @include item-root;
+  }
+
+  .md3-list-item--with-leading-thumbnail {
+    @include thumbnail-item-root;
+  }
+
+  .md3-list-item--with-leading-image {
+    @include image-item-root;
+  }
+
+  .md3-list-item--with-leading-video {
+    @include video-item-root;
+  }
+
+  .md3-list-item__ripple {
+    display: inline-flex;
+    inset: 0;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .md3-list-item__focus-ring {
+    z-index: 1;
+  }
+}
+
+@mixin host-root() {
+  color: unset;
+}
+
+@mixin item-root() {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  outline: none;
+  position: relative;
+  width: 100%;
+
+  &.md3-list-item--enabled {
+    cursor: pointer;
+  }
+
+  .md3-list-item__start {
+    flex: 0 0 auto;
+    z-index: 1;
+  }
+
+  .md3-list-item__body {
+    box-sizing: border-box;
+    flex: 1 0 0;
+    padding-inline-start: 16px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .md3-list-item__end {
+    flex: 0 0 auto;
+    padding-inline-end: 24px;
+    z-index: 1;
+  }
+
+  .md3-list-item__label-text {
+    display: flex;
+  }
+
+  .md3-list-item__supporting-text {
+    display: block;
+    padding-block-start: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .md3-list-item__supporting-text--multi-line {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+  }
+
+  .md3-list-item__trailing-supporting-text {
+    padding-inline-start: 16px;
+  }
+}
+
+@mixin icon-item-root() {
+  .md3-list-item__start {
+    padding-inline-start: 16px;
+  }
+}
+
+@mixin thumbnail-item-root() {
+  .md3-list-item__start {
+    padding-inline-start: 16px;
+  }
+}
+
+@mixin image-item-root() {
+  .md3-list-item__start {
+    padding-inline-start: 16px;
+  }
+}
+
+@mixin video-item-root() {
+  .md3-list-item__start {
+    padding-inline-start: 0;
+  }
+}

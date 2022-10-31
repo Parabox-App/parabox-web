@@ -1,0 +1,9 @@
+/**
+  * @license
+  * Copyright 2022 Google LLC
+  * SPDX-License-Identifier: Apache-2.0
+  */
+import { css } from 'lit';
+export const styles = css `:host{display:inline-flex}.md3-field{display:inline-flex;flex:1;flex-direction:column;writing-mode:horizontal-tb}.md3-field__container{align-items:center;box-sizing:border-box;display:flex;flex:1;position:relative}.md3-field--disabled{pointer-events:none}.md3-field--with-start .md3-field__start,.md3-field--with-end .md3-field__end{min-width:48px}.md3-field--with-start .md3-field__start{margin-inline-end:4px}.md3-field--with-end .md3-field__end{margin-inline-start:4px}.md3-field__start,.md3-field__middle,.md3-field__end{display:flex;align-items:center;box-sizing:border-box;height:100%;position:relative}.md3-field__start,.md3-field__end{justify-content:center}.md3-field__middle{align-self:baseline;flex:1}.md3-field__content{display:flex;flex:1;opacity:0;transition:opacity 83ms cubic-bezier(0.4, 0, 0.2, 1)}.md3-field--no-label .md3-field__content,.md3-field--focused .md3-field__content,.md3-field--populated .md3-field__content{opacity:1;transition-delay:67ms}.md3-field__label{overflow:hidden;max-width:100%;pointer-events:none;text-overflow:ellipsis;white-space:nowrap;z-index:1}.md3-field__label--resting{position:absolute;top:50%;transform:translateY(-50%);transform-origin:top left}.md3-field__label--floating{/*! Used in field.ts @queryAsync. go/css-conformance#unstyled-classes */}.md3-field__label--hidden{opacity:0}.md3-field--no-label .md3-field__label{display:none}.md3-field__supporting-text{display:flex;justify-content:space-between}.md3-field__supporting-text-start,.md3-field__supporting-text-end{display:flex}/*# sourceMappingURL=shared-styles.css.map */
+`;
+//# sourceMappingURL=shared-styles.css.js.map
